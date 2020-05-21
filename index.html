@@ -31,19 +31,19 @@
 			<div class="collapse navbar-collapse" id="basicExampleNav">
 				<ul class="navbar-nav mr-auto smooth-scroll">
                    	<li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#intro">Главная</a>
+                        <a class="nav-link waves-effect waves-light" href="#intro" data-target="anchor">Главная</a>
                     </li>	
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#best-features">О компании</a>
+                        <a class="nav-link waves-effect waves-light" href="#best-features" data-target="anchor">О компании</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#examples">Популярные отели</a>
+                        <a class="nav-link waves-effect waves-light" href="#examples" data-target="anchor">Популярные отели</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#gallery">Галерея</a>
+                        <a class="nav-link waves-effect waves-light" href="#gallery" data-target="anchor">Галерея</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#contact">Контакты</a>
+                        <a class="nav-link waves-effect waves-light" href="#contact" data-target="anchor">Контакты</a>
                     </li>
                 </ul>
                 <!-- Social Icon  -->
@@ -70,7 +70,7 @@
                             
                             <h4 class="white-text my-4">Текс
                                 </h4>
-                            <button type="button" class="btn btn-outline-white">Подробнее...</button>
+                            <button type="button" id="js-btn"  class="btn btn-none text-white js-btn">Написать нам</button>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
 		 <hr class="my-5">
 
-		 <section class="gallery">
+		 <section id="gallery" class="gallery">
 		 	<h2 class="mb-5 font-weight-bold text-center">Галерея</h2>
 
 		 	<div class="row">
@@ -212,7 +212,7 @@
 
 		 <section id="contact">
 
-                <h2 class="mb-5 font-weight-bold text-center">Контакты</h2>
+                <h2  class="mb-5 font-weight-bold text-center" id="js-con" >Контакты</h2>
 
                
                 <div class="row">
@@ -220,6 +220,11 @@
                     <div class="col-lg-5 col-md-12">
                    
                         <form class="p-5 grey-text">
+
+                        	<input type="hidden" name="Турагенство" value="Site Name">
+		<input type="hidden" name="admin_email" value="dofarre09@mail.ru">
+		<input type="hidden" name="form_subject" value="Form Subject">
+
                             <div class="md-form form-sm"> <i class="fa fa-user prefix"></i>
                                 <input type="text" id="form2" class="form-control form-control-sm">
                                 <label for="form3">Введите ваше имя</label>
@@ -232,18 +237,18 @@
                                 <input type="text" id="form32" class="form-control form-control-sm">
                                 <label for="form34"> Введите тему вашего сообщения</label>
                             </div>
-                            <div class="md-form form-sm"> <i class="fa fa-pencil prefix grey-text"></i>
+                            <div class="md-form form-sm"> <i class="fa fa-pencil-square prefix" ></i>
                                 <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
                                 <label for="form8">Введите ваше сообщение</label>
                             </div>
                             <div class="text-center mt-4">
-                                <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                                <button class="btn btn-primary">Отправить <i class="fa fa-paper-plane-o ml-1"></i></button>
                             </div>
                         </form>
                        
                     </div>
                     
-                    <div class="col-lg-7 col-md-12">
+                    <div class="col-lg-6 col-md-12">
 
                       
                         <div class="row text-center">
@@ -251,7 +256,7 @@
                             
                             <div class="col-lg-4 col-md-12 mb-3">
 
-                                <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>г. Ковылкино, ТЦ СпецМаркет, ул. Пролетарская 30, офис 203</p>
+                                <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>г. Ковылкино, ТЦ СпецМаркет, ул. Пролетарская 30</p>
 
                             </div>
                             
@@ -270,10 +275,7 @@
 
                         </div>
                         
-                        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
-          <iframe src="https://maps.google.com/maps?q=Kowilkino&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+                        <div id="map-container" class="z-depth-1-half " style="height: 300px"></div>
 
                     </div>
 
@@ -282,11 +284,12 @@
             </section>
 	</div>
 </main>
+
  <footer class="page-footer font-small unique-color-dark">
 
 	        <div class="primary-color">
             <div class="container">
-                <div class="row py-4 d-flex align-items-center">
+                <div class="row py-3 d-flex align-items-center">
 
                     
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -306,7 +309,7 @@
             </div>
         </div>
         
-        <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="container mt-5 mb-4 text-center text-md-left ">
             <div class="row mt-3">
 
                
@@ -319,43 +322,9 @@
 </p>
                 </div>
                 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong></strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!"></a>
-                    </p>
-                    <p>
-                        <a href="#!"></a>
-                    </p>
-                    <p>
-                        <a href="#!"></a>
-                    </p>
-                    <p>
-                        <a href="#!"></a>
-                    </p>
-                </div>
+              
                
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong> </strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!"> </a>
-                    </p>
-                    <p>
-                        <a href="#!">  </a>
-                    </p>
-                    <p>
-                        <a href="#!"> </a>
-                    </p>
-                    <p>
-                        <a href="#!"></a>
-                    </p>
-                </div>
+                
                
                 <div class="col-md-4 col-lg-3 col-xl-3">
                     <h6 class="text-uppercase font-weight-bold">
@@ -363,13 +332,13 @@
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fas fa-home"></i></i> </p>
+                        <i class="fas fa-home mr-3"></i></i> г. Ковылкино</p>
                     <p>
                         <i class="fa fa-envelope mr-3"></i> popovapraga@mail.ru</p>
                     <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <i class="fa fa-phone mr-3"></i> +7 927 640 93 16</p>
                     <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i class="fa fa-print mr-3"></i> +7 927 640 93 16</p>
                 </div>
                
 
@@ -394,8 +363,34 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script  src="js/mine.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script src="https://maps.google.com/maps/api/js?"></script>
+  <script>
+        function regular_map() {
+            var var_location = new google.maps.LatLng(54.039033, 43.913416);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Ковылкино"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
+
+// Carousel options
+  </script>
+  
   
 </body>
 </html>
