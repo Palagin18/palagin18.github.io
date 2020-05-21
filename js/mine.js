@@ -15,7 +15,6 @@ $(function(){
 		return false;
 	})
 });
-$(document).ready(function() {
 
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
@@ -34,4 +33,3 @@ $(document).ready(function() {
 		return false;
 	});
 
-});
