@@ -4,9 +4,8 @@ $(document).ready(function() {
 		var top = $("#js-con").offset().top - 60;
 		$("html, body").animate({
 			scrollTop: top
-		},500);
+		},700);
 	});
-});
 $(function(){
 	$('a[data-target^="anchor"]').on('click.smoothscroll',function(){
 		var target = $(this).attr('href'),
@@ -17,11 +16,11 @@ $(function(){
 });
 
 	//E-mail Ajax Send
-	$("form").submit(function() { //Change
+	$("p-5 grey-text").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "php/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
@@ -33,3 +32,10 @@ $(function(){
 		return false;
 	});
 
+
+
+
+
+
+
+});
