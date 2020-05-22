@@ -1,0 +1,385 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background-color:#fff;
+
+}
+.h{
+	text-align: center;
+}
+
+}
+#sec #sec1 label {
+	
+}
+#registr{
+	margin-left: 100px;
+}
+#sub{
+	margin-right: 15px;
+    width: 150px;
+    margin-top: 5px;
+    background-color: #337AB7;
+    padding: 7px 16px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+}
+#block{
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	height: 100px;
+	position: absolute;
+	z-index: 5100;
+	top:0;
+	left:0;
+	width:100%;
+	font-size: 20px;
+	text-align: center;
+
+}
+#block img{
+	float: left;
+	margin-left: 350px;
+	margin-top: 15px;
+}
+
+.big_text{
+	margin-bottom: 15px;
+    width: 270px;
+    padding: 6px 12px 8px;
+    height: 35px;
+    border: 1px solid #d3d9de;
+    border-radius: 3px;
+}
+#exit{
+	float: right;
+	border-radius: 2px;
+	font-size:16px;
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px 24px;
+	margin-right: 355px;
+	margin-top: 15px;
+}
+#st{
+	margin-top: 150px;
+}
+footer {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 327px;
+	color: #000;
+	height: 50px; 
+	position: relative; 
+	bottom: 0; 
+	width: 100%;
+}
+#text{
+	margin-top: 100px;
+}
+.clear {
+  	background: #48352a;
+	
+	text-align: center;
+    color: #9d999d;
+}
+.fut{
+	padding: 15px;
+}
+
+#qw{
+	margin-top: 300px;
+}
+#regwx{
+	width: 250px;
+	line-height: 35px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #5CB85C;
+	font-weight: 500;
+	border-radius: 3px;
+	font-size: 18px;
+	border: 0;
+}
+#modalBody{
+	margin-top: 50px;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 80px 0 5px;
+  padding: 25px 0 13px;
+  text-align: center;
+  background: #48352a;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.obr{
+	text-align: center;
+}
+.h1{
+	margin-top: 20px;
+	
+}
+.cont{
+	padding: 10 0;
+	max-width: 1200px;
+	min-width: 280px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.conten{
+	max-width: 1200px;
+	min-width: 280px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#ter{
+	margin-top: 100px;
+}
+.redact{
+	padding: 10 0;
+	max-width: 1200px;
+	min-width: 280px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.redact img{
+	width: 100%;
+	line-height: 0;
+}
+#form{
+
+ 	margin: 260px auto;
+
+ 	padding: 30px 20 30 50;
+ 	border: 1px solid #48352a;
+ 	width: 250px;
+ 	border-radius: 6px; 
+
+}
+.obr{
+	margin-right: 28px;
+}
+textarea{
+	margin-top: 20px;
+	width: 200px;
+	height: 50px;
+}
+#ret input{
+	width: 200px; 
+	 margin: -15px auto 10px auto; 
+	 height: 35px;
+	 margin-top: 22px;
+	 padding: 13px;
+}
+.battonn{
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px 24px;
+	margin:20px 0px 0px 50px;
+}
+.battonn:hover{
+	background:#48352a;
+	color: #fff;
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	background: #fff;
+	margin-top: 30px;
+	border-radius: 5px;
+	float: right;
+
+}
+.btn {
+	
+}
+.btnPrimary,.btnSuccess,.btnInfo,.btnWarning,.btnDanger {color: #000}
+.btnPrimary {background-color: #337AB7;}
+.btnSuccess {background-color: #5CB85C}
+.btnInfo {background-color: #5BC0DE}
+.btnWarning {background-color: #F0AD4E}
+.btnDanger {background-color: #D9534F}
+.btn:hover {opacity: 0.7}
+.btn:active {opacity: 1.0}
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+/* Responsive modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1111112;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+/* Primary */
+.modalPrimary .modalHeader, .modalPrimary .modalFooter, .modalPrimary .modalClose {
+	background-color: #337AB7 !important;
+	border: 1px solid #337AB7;
+	color: #fff;
+}
+/* Success */
+.modalSuccess .modalHeader, .modalSuccess .modalFooter, .modalSuccess .modalClose {
+	background-color: #5CB85C !important;
+	border: 1px solid #5CB85C;
+	color: #fff;
+}
+
+.modalContent {
+	width: 350px;
+	margin: 240px auto;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 10px;         
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+
+
+
+}
+.modalHeader {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	padding: 13px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 6px 6px 0 0;
+}
+.modalBody {
+	 width: 275px; 
+	 margin: -15px auto 20px auto; 
+	 text-align: center;
+	 margin-top: 22px;	
+	
+}
+.modalFooter {
+	height: 15px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	border-radius: 0 0 6px 6px;
+	padding: 13px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.modalFooter div {
+	float: right;
+	margin: -7px -10px 0 0;
+}
+.modalClose {
+	color: #bbb;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+}
+.modalClose:hover,.modalClose:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

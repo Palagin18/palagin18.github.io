@@ -1,0 +1,122 @@
+.btn{
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 6px 24px;
+	float: right;
+	
+
+}
+.btn:hover{
+	background: #ccc;
+}
+.h1{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #000;
+}
+.cars{
+	flex-wrap: wrap;
+}
+.cars .card{
+	width: 300px;
+	background: #48352a;
+	
+	
+	overflow: hidden;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.cars .card .info{
+	margin: 0 10px;
+	padding: 10px;
+	border-bottom: 1px solid black ;
+	color: #fff;
+}
+.cars .card img{
+	width: 100%;
+	height: 225px;
+}
+.wrapper{
+	width: 1000px;
+}
+.margin-center{
+	margin: 0 auto;
+}
+
+.justify-between{
+	display: flex;
+	justify-content: space-between;
+}
+.imgw{
+
+}
+hr{
+z-index: 111111000;
+color: red;
+margin-top: 99px;
+}
+.image {
+
+	margin: 0 auto;
+	background-position: 50% 50%;
+	
+	
+}
+#h1{
+	color: white;
+	font-size: 26px;
+	position	: absolute;
+	top		: 50px;
+	left		: 0;
+	width		: 100%;
+	padding: 160px 0;
+    z-index: 1;
+    text-align: center
+}
+.h2w {
+	color: #fff;
+	font-size: 16px;
+	position	: absolute;
+	top		: 95px;
+	left		: 0;
+	width		: 100%;
+	padding: 160px 0;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+       overflow:hidden;
+}
+li{
+	    list-style-type: disc;
+	        margin: 0;
+    padding: 2px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
